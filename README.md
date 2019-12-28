@@ -1,6 +1,5 @@
-# ps-hacs
+# ps-device-distance-scipt
 
-_Sample python_script for [HACS](https://github.com/custom-components/hacs)._
 
 ## Installation
 
