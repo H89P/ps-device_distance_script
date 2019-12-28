@@ -1,4 +1,4 @@
-# ps-device-distance-scipt
+# ps-device-distance-script
 
 
 ## Installation
