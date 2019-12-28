@@ -66,3 +66,6 @@ automation:
       device_id_2: car
       unit: metric
 ```
+
+## Credits
+- Calculation logic gathered from [Stackoverflow](https://stackoverflow.com/questions/19412462/getting-distance-between-two-points-based-on-latitude-longitude)
