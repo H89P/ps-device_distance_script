@@ -7,6 +7,8 @@
 
 Download the `device_distance_script.py.py` file and put it in your /config/python_scripts directory or install via HACS.
 
+Add ```https://github.com/H89P/ps-device_distance_script``` as a custom repo to the hacs installation with type python_script
+
 ## Script arguments
 
 | key |	required |	type |	description |
