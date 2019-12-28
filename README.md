@@ -21,14 +21,14 @@ device_id_2: <name of device_tracker device 2>
 unit: metric
 ```
 
-#### Example
+#### Example:
 ```yaml
 device_id_1: phone
 device_id_2: car
 unit: metric
 ```
 
-#### Result
+#### Result:
 A result a sensor is created:
 ```yaml
 sensor.distance_<name of device_tracker device 1>_<name of device_tracker device 1>
@@ -48,4 +48,21 @@ icon: mdi:map-marker-distance
 friendly_name: Distance between phone and car
 unit_of_measurement: m
 devices: phone & car
+```
+
+
+#### Example Automation to update the sensor:
+
+```yaml
+automation:
+- alias: Update Phone in Car Sensor
+  trigger:
+  - platform: time_pattern
+    minutes: "/5"
+  action:
+  - service: python_script.device_distance_script
+    data:
+      device_id_1: phone
+      device_id_2: car
+      unit: metric
 ```
